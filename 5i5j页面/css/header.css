@@ -1,0 +1,93 @@
+/* header.html的body边距设置为0 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 当前页面最外层的居中元素 */
+.outer_center{
+    width: 1537px;
+    /* height: 100px;  子元素设置了高度，这个高度就可以去掉 */
+    margin: 0 auto;
+    overflow: hidden;
+}
+ header{
+    height: 60px;
+    background-color: #ffffff;
+}
+ .header_outer{
+    width: 1180px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+}
+/* 设置头部左侧logo部分 */
+header .header_outer .header_left{
+    width: 295px;
+    height: 60px;
+    flex: 1;
+    
+}
+header .header_outer .header_left .header_logo{
+    height: 60px;
+    width: 124px;
+    float: left;
+    
+} 
+header .header_outer .header_left .header_dingwei{
+    float: left;
+    width: 70px;
+    height: 60px;
+    line-height: 60px;/*垂直居中*/
+    margin-left: 30px;
+    color: #888888;
+
+}
+header .header_outer .header_left .header_logo img{
+    width: 124px;
+    height: 47px;
+    margin-top: 6px;
+}
+/* 设置头部中间部分 选项卡 */
+header .header_outer .header_center{
+    width: 580px;
+    height: 60px;
+    flex: 2;
+} 
+header .header_outer .header_center ul li{
+    list-style: none;
+    float: left;
+    height: 60px;
+    margin-right: 30px;
+    line-height: 60px;
+    color: #333333;
+
+}
+header .header_outer .header_center ul li a{
+    display: inline-block;
+    height: 45px;
+}
+header .header_outer .header_center ul li a:hover{
+    cursor: pointer;  /*箭头变手型*/
+    font-weight: bold;
+    border-bottom: 2px solid orange;
+
+}
+
+/* 设置头部右侧登录注册按钮 */
+header .header_outer .header_right{
+    width: 295px;
+    height: 60px;
+    flex: 1;
+    line-height: 60px;
+} 
+header .header_outer .header_right span{
+    float: right;
+    margin-left: 20px;
+    font-size: 14px;  
+}
+header .header_outer .header_right span:hover{
+    cursor: pointer;
+    font-weight: bold;
+}

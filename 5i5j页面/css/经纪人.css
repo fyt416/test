@@ -1,0 +1,289 @@
+/* 当前页面最外层元素居中 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.outer_center{
+    width: 1537px;
+    /* height: 100px;  子元素设置了高度，这个高度就可以去掉 */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* article部分 不共用********************************************************************* */
+
+.article .article_outer{
+    margin: 0 auto;
+    width: 1180px;
+}
+/* article中对的头部部分（搜索框+复制框） */
+.article_outer .article_header{
+    height: 250px;
+}
+.article_outer .article_header>div:first-child{
+    height: 54px;
+    /* border: 1px solid yellow; */
+}
+/*div:first-child 下的两个div  */
+.article_outer .article_header>div:first-child>div:first-child{
+    float: left;
+    height: 54px;
+    line-height: 54px;
+    font-size: 12px;
+    color: #888888;
+}
+.article_outer .article_header>div:first-child>div:last-child{
+    float: right;
+    height: 54px;
+    line-height: 54px;
+}
+/* div:first-child 下的两个div 第1个div的第二个div 搜索框部分 */
+.article_outer .article_header>div:first-child>div:last-child input{
+    width: 287px;
+    padding: 8px 12px;
+    border: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #888888;
+    margin-right: -5px;
+}
+/*橙色的搜索框部分 */
+.article_outer .article_header>div:first-child>div:last-child span{
+    display: inline-block;
+    width: 88px;
+    height: 36px;
+    color: #ffffff;
+    background-color:orange ;
+    text-align: center;
+    line-height: 36px;
+}
+/* 复选框部分 */
+.article_outer .article_header>div:last-child{
+    height: 120px;
+    margin: 30px 0;
+    background-color: #fafafa;
+    padding: 8px 15px;
+    /* border: 1px solid blue; */
+}
+.article_outer .article_header>div:last-child>ul>li{
+    height: 44px;
+    line-height: 44px;
+    /* border: 1px solid red; */
+    list-style: none;
+    color: #323942;
+    font-size: 14px;
+}
+.article_outer .article_header>div:last-child>ul>li:first-child .checked{
+    color :#007ef3 ;
+}
+.article_outer .article_header>div:last-child>ul>li:first-child span{
+    margin-right: 30px;
+
+}
+.article_outer .article_header>div:last-child>ul>li:nth-child(2) div{
+    float: left;
+    margin-right: 55px;
+}
+.article_outer .article_header>div:last-child>ul>li:nth-child(2) div:first-child{
+    margin-right: 30px;
+}
+.article_outer .article_header>div:last-child>ul>li:last-child span{
+    margin-right: 30px;
+}
+.article_outer .article_header>div:last-child>ul>li:last-child span:last-child{
+    font-size: 12px;
+    color: #8f9ba9;
+}
+
+/* article中对的主体部分（经纪人简介部分） */
+.article_body li{
+    list-style: none;
+    border-bottom: 1px solid #eaeaea;
+}
+.article_body li:first-child{
+    height: 45px;
+    line-height: 45px;
+    
+
+}
+.article_body li:first-child>div:first-child{
+    float: left;
+    font-size: 16px;
+    color: #333333;
+}
+.article_body li:first-child>div:first-child span{
+    color: red;
+    font-weight: bold;
+}
+.article_body li:first-child>div:last-child{
+    float: right;
+}
+.article_body li:first-child>div:last-child ul{
+    display: flex;
+}
+.article_body li:first-child>div:last-child ul li{
+    margin-left: 40px;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+.article_body li:first-child>div:last-child ul li.selected{
+    color: #333333;
+    border-bottom: 3px solid orange;
+}
+
+/* .article_body 中的body部分的经纪人照片及简介部分 */
+.article_body li.article_body_pic{
+    height: 166px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    display: flex;
+    /* border: 1px solid red; */
+}
+/* .article_body li.article_body_pic>div:first-child{
+    float: left;
+} */
+.article_body li.article_body_pic>div:first-child img{
+    width: 123px;
+    height: 165px;
+}
+.article_body li.article_body_pic>div:last-child{
+    /* border:1px solid red; */
+    height: 166px;
+    width: 1040px;
+    margin-left: 17px;
+}
+/*简介介绍内容开始**** */
+.article_body li.article_body_pic>div:last-child>div:first-child{
+    height: 40px;
+    /* line-height: 40px; */
+
+}
+.article_body li.article_body_pic>div:last-child>div:first-child div.left{
+    float: left;
+    width: 400px;
+    font-size: 12px;
+    height: 40px;
+    /* border: 1px solid blue; */
+}
+.article_body li.article_body_pic>div:last-child>div:first-child div.left span:first-child{
+    font-size: 20px;
+    color: #323942;
+    border: none;
+    line-height: 40px;
+    margin-right: 10px;
+    position: relative;
+    top: 0px;
+
+}
+.article_body li.article_body_pic>div:last-child>div:first-child div.left span{
+    width: 84px;
+    height: 22px;
+    display: inline-block;
+    border: 1px solid #d0d0d0;
+    line-height: 22px;
+    /* text-align: center; */
+    margin-right: 0px;
+    margin-left: 12px;
+    color: #2370b3;
+    position: relative;
+    top: -3px;
+}
+.article_body li.article_body_pic>div:last-child>div:first-child div.left span:last-child{
+    color: #ffa100;
+}
+.article_body li.article_body_pic>div:last-child>div:first-child div.right{
+    float: right;
+    width: 253px;
+    /* border: 1px solid blue; */
+    height: 40px;
+    line-height: 40px;
+
+}
+.article_body li.article_body_pic>div:last-child>div:first-child div.right div{
+    float: left;
+    font-size: 13px;
+    margin-left: 16px;
+}
+.article_body li.article_body_pic>div:last-child>div:first-child div.right div:nth-child(2){
+    color: #8e99a9;
+    margin-left: 14px;
+    margin-right: 12px;
+}
+.article_body li.article_body_pic>div:last-child>div:first-child div.right div:nth-child(3){
+    height: 32px;
+    padding: 0 14px;
+    border: 1px solid #b9b9b9;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    margin-top: 5px;
+}
+.article_body li.article_body_pic>div:last-child>div:first-child div.right div:nth-child(3) i{
+    color: #b9b9b9;
+    font-weight: bold;
+}
+/* 简介的第二行************* */
+/* article_body中右侧部分的第二行 */
+.article_body li.article_body_pic>div>div:nth-child(2) div{
+    /* border: 1px solid red; */
+    float: left;
+    width: 40%;
+    /* margin-right: 50px; */
+    margin-right: 80px;
+    margin-left: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    color:#292b33;
+    font-size: 14px;
+}
+
+/* article_body中右侧部分的第三行 */
+.article_body li.article_body_pic>div>div:nth-child(3) div{
+    /* border: 1px solid red; */
+    float: left;
+    width: 40%;
+    /* margin-right: 50px; */
+    margin-right: 80px;
+    margin-left: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 5px;
+    color:#292b33;
+    font-size: 14px;
+}
+
+
+/* article中对的脚部部分（分页按钮） ********************************************************/
+.article_footer{
+    margin-top: 43px;
+    margin-bottom: 45px;
+    float: right;
+    overflow: hidden;
+}
+.article_footer div{
+    float: right;
+    width: 24px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #dcdcdc;
+    padding: 0 12px;
+    margin-left: 4px;
+    color:#323942 ;
+    font-size: 14px;
+}
+.article_footer div:first-child{
+    
+    width: 60px;
+}
+.article_footer div:last-child{
+    background-color: #fbb100;
+    color: #ffffff;
+}
+
+
+
+
+
+ 

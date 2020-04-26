@@ -1,0 +1,663 @@
+/* header.html的body边距设置为0 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.c{
+    clear: both;
+}
+
+/* 当前页面最外层的居中元素 */
+.outer_center{
+    width: 1537px;
+    /* height: 100px;  子元素设置了高度，这个高度就可以去掉 */
+    margin: 0 auto;
+    overflow: hidden;
+}
+ header{
+    /* height: 60px; */
+    background-color: #ffffff;
+}
+ .header_outer{
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    /* background-color: yellow; */
+}
+
+/* 设置头部 选项卡 +登录 */
+header .header_outer .header_left{
+    width: 580px;
+    height: 60px;
+    flex: 2;
+} 
+header .header_outer .header_left ul li{
+    list-style: none;
+    float: left;
+    height: 60px;
+    margin-right: 30px;
+    line-height: 60px;
+    color: #333333;
+
+}
+header .header_outer .header_left ul li a{
+    display: inline-block;
+    height: 45px;
+}
+header .header_outer .header_left ul li a:hover{
+    cursor: pointer;  /*箭头变手型*/
+    font-weight: bold;
+    border-bottom: 2px solid orange;
+
+}
+
+/* 设置头部右侧登录注册按钮 */
+header .header_outer .header_right{
+    width: 295px;
+    height: 60px;
+    flex: 1;
+    line-height: 60px;
+} 
+header .header_outer .header_right span{
+    float: right;
+    margin-left: 20px;
+    font-size: 14px;  
+}
+header .header_outer .header_right span:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* 抬头的我爱我家图标 */
+.header_bottom{
+    width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 10px 0;
+}
+.header_bottom .header_dingwei{
+    color: #888888;
+    height: 45px;
+    line-height: 45px;
+}
+.header_bottom .header_dingwei span:first-child{
+    margin-left: 40px;
+    margin-right: 5px;
+}
+/* header_bottom 下的第三个div */
+.header_bottom div:nth-child(3){
+    height: 45px;
+    line-height: 45px;
+}
+.header_bottom div:nth-child(3) ul li{
+    float: left;
+    list-style: none;
+    color: #5d5d5d;
+    margin-right: 45px;
+}
+.header_bottom div:nth-child(3) ul li:first-child{
+    margin-left: 45px;
+    color: #333333;
+    border-bottom: 4px solid #3c9cfb;
+    height: 38px;
+}
+/* 我爱我家图标部分结束 */
+/* 大图片背景开始 */
+.article{
+    height: 340px;
+    width: 1537px;
+    border:1px solid  #ffffff;
+    background-image: url('../images/banner.jpg');
+}
+/* 搜索框的最外的大白框 */
+.article>div{
+    width: 680px;
+    height: 280px;
+    margin-top: 15px;
+    padding: 10px 30px;
+    background-color: #ffffff;
+    position: relative;
+    left: 178px;
+}
+
+.article>div div:first-child input{
+    width: 511px;
+    height: 40px;
+}
+.article>div div:first-child span{
+    display: inline-block;
+    width: 89px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-image: linear-gradient(to right,#2992fb,#63affb);
+    position: relative;
+    top: 1px;
+    left: -5px;
+}
+.article>div div:first-child span li{
+    color: #ffffff;
+    font-size: 20px;
+}
+/* 白框第二行 */
+.article>div div:nth-child(2) ul{
+    width: 100%;
+}
+.article>div div:nth-child(2) ul li{
+     color: #9b9b9b;
+     font-size: 12px;
+     float: left;
+     list-style: none;
+     margin-right: 10px;
+     margin-top: 10px;
+}
+/* 白框第三行 */
+.article .third span{
+    display: inline-block;
+    font-size: 13px;
+    color: #494949;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.article .third span:first-child{
+    font-weight: bold;
+}
+/* 圆点 */
+.article .round{
+    width: 28px;
+    height: 28px;
+    border-radius: 14px;
+    line-height: 28px;
+    text-align: center;
+    background-color:#fea600;
+    float: right;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+.article .round i{
+    color: #ffffff;
+}
+
+/* 楼盘导购部分 */
+.section1{
+    width: 1537px;
+    color: #f7f7f7;
+    /* border: 1px solid red; */
+}
+.section1 .house_outer{
+    width: 1180px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.section1 .house_outer h3{
+    color: #333333;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.section1 .house_outer .house_inner{
+    width: 1180px;
+    height: 170px;
+    margin-bottom: 60px;
+    /* border: 1px solid green; */
+    display: flex;
+}
+.section1 .house_outer .house_inner div:first-child{
+    color: #333333;
+    background-image: url('../images/house1.png');
+    width: 280px;
+    height: 170px;
+    color: #ffffff;
+    line-height: 170px;
+    text-align: center;
+    /* border: 1px solid yellow; */
+}
+.section1 .house_outer .house_inner div:nth-child(2){
+    color: #333333;
+    background-image: url('../images/house2.png');
+    width: 280px;
+    height: 170px;
+    color: #ffffff;
+    line-height: 170px;
+    text-align: center;
+    border: 1px solid yellow;
+    margin-left: 18px;
+}
+.section1 .house_outer .house_inner div:nth-child(3){
+    color: #333333;
+    background-image: url('../images/house3.png');
+    width: 280px;
+    height: 170px;
+    color: #ffffff;
+    line-height: 170px;
+    text-align: center;
+    /* border: 1px solid yellow; */
+    margin-left: 18px;
+}
+.section1 .house_outer .house_inner div:nth-child(4){
+    color: #333333;
+    background-image: url('../images/house4.png');
+    width: 280px;
+    height: 170px;
+    color: #ffffff;
+    line-height: 170px;
+    text-align: center;
+    /* border: 1px solid yellow; */
+    margin-left: 19px;
+}
+
+/* 精选楼盘 */
+.section_two_outer{
+    /* border: 1px solid green; */
+    width: 1180px;
+    margin: 0 auto;
+}
+
+.section_two_outer div:first-child{
+    padding: 40px 0 20px 0;
+}
+.section_two_outer div:first-child span:first-child{
+    font-size: 20px ; 
+}
+.section_two_outer>div:first-child span:last-child{
+    font-size: 12px ; 
+    color: #2892fb;
+    float: right;
+}
+.section_two_outer .section_two_inner{
+    /* border: 1px solid green; */
+    overflow: hidden;
+    
+}
+.section_two_outer .section_two_inner div{
+    width: 280px;
+    height: 328px;
+    padding: 0;
+    float: left;
+    margin-left:17px ;
+    margin-bottom: 40px;
+}
+.section_two_outer .section_two_inner div:first-child{
+    margin-left: 0;
+}
+.section_two_outer .section_two_inner div:nth-child(5){
+    margin-left: 0;
+}
+.section_two_outer .section_two_inner div:nth-child(9){
+    margin-left: 0;
+}
+
+
+/* 精选楼盘下的图片 */
+
+.section_two_inner .section_pic img{
+    width: 280px;
+    height: 210px;
+}
+.section_two_inner .section_pic .txt1{
+    display: inline-block;
+    padding: 5px;
+    color: #ffffff;
+    border-radius: 2px;
+    background-color:#e74057 ;
+    position: relative;
+    top: -200px; 
+}
+ .section_two_inner .section_pic .txt2{
+    width: 60px;
+    color: #ffffff;
+    font-size: 13px;
+    position: relative;
+    top: -60px;
+    left: 20px;
+
+}
+.section_two_inner .section_pic p{
+    width:60px;
+    font-size:13px;
+    background-color: #252c2e;
+    color: #ffffff;
+    position: relative;
+    top: -80px;
+    left: 200px;
+} 
+ .section_two_inner .section_pic .txt3{
+    position: relative;
+    top: -50px;
+    color: #929292;
+    font-size: 13px;
+}
+.section_two_inner .section_pic .txt3 li{
+    margin-bottom: 5px;
+    list-style: none;
+}
+.section_two_inner .section_pic .txt3_1{
+    color:#333333;
+    font-size: 15px;
+}
+.section_two_inner .section_pic .txt3_2{
+    display: inline-block;
+    color: #fb5033;
+} 
+
+/* 以上精选楼盘部分结束 */
+
+/* 地图找房图片 */
+.map{
+    width: 100%;
+}
+.map img{
+    width: 1537px;
+    height: 214px;
+}
+.map h3{
+    font-size: 30px;
+    position: relative;
+    top: -150px;
+    left: 400px;
+    color: #ffffff;
+    
+}
+.map div{
+    padding: 10px;
+    background-color: #ffffff;
+    color: #3c9cfb;
+    width:180px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    left: 360px;
+    top: -130px;
+}
+.map p{
+    width: 200px;
+    position: relative;
+    top: -225px;
+    left: 960px;
+    color: #ffffff;
+}
+
+/* 地图找房部分结束 */
+/* 楼盘动态开始 */
+.section_house{
+    width: 1180px;
+    margin: 0 auto;
+    height: 500px;
+    /* border: 1px solid green; */
+}
+/* 文字部分 */
+.section_house>div:first-child{
+    padding: 40px 0 20px 0;
+}
+.section_house>div:first-child span:first-child{
+    font-size: 20px ; 
+}
+.section_house>div:first-child span:last-child{
+    font-size: 12px ; 
+    color: #2892fb;
+    float: right;
+}
+/* 楼盘动态地动态 */
+
+.section_house .inf>div{
+    width: 558px;
+    height: 127px;
+    /* border: 1px solid yellow; */
+    margin: 30px 0; 
+    float: left;
+    
+}
+.section_house .inf>div:first-child{
+    margin-right: 55px;
+}
+.section_house .inf>div:nth-child(3){
+    margin-right: 55px;
+}
+
+/* 楼盘动态信息 */
+.section_house .inf>div div:first-child{
+    background-color: #f7f7f7;
+    height: 127px;
+    width: 114px;
+    text-align: center;
+    line-height: 127px;
+    float: left;
+}
+.section_house .inf>div div:first-child:hover{
+    background-color: #1c8fff;
+}
+.section_house .inf>div div:first-child h1{
+    color: #333333;
+    font-size: 40px;
+}
+.section_house .inf>div div:first-child h1:hover{
+    color: #ffffff;
+}
+.section_house .inf>div div:first-child h5{
+    color: #959595;
+    font-size: 12px;
+    position: relative;
+    top: -90px;
+}
+.section_house .inf>div div:first-child h5:hover{
+    color: #ffffff;
+}
+.section_house .inf>div div:last-child{
+    width: 420px;
+    height: 107px;
+    padding: 10px;
+    float: right;
+    color: #333333;
+    
+}
+.section_house .inf>div div:last-child h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.section_house .inf>div div:last-child h4{
+    font-size: 15px;
+}
+
+/* 楼盘动态结束   */
+/* 动态选项卡 */
+
+/* 脚部上方灰色选项卡部分样式----------------------------------------- */
+.section{
+    padding:40px 0 40px 0 ;
+}
+.section .section_outer{
+    width: 1180px;
+    margin: 0 auto;
+    
+}
+.section .section_outer .section_top{
+    height: 43px;
+    padding-left: 10px;
+    border-bottom: 1px solid #eaeaea;
+    line-height: 43px;
+}
+
+.section .section_outer .section_top div{
+    float: left;
+    margin-right: 56px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 98%;
+    
+}
+.section .section_outer .section_top div:hover{
+    cursor: pointer;
+    color: #fcb100;
+    border-bottom: 3px solid #fcb100;
+}
+
+/* 选项卡第二行 */
+section .section_bottom span{
+    margin-right: 15px;
+    font-size: 12px;
+    line-height: 42px;
+}
+section .section_bottom span:hover{
+    color: #007ef3;
+}
+
+
+/* 脚步************************************************** */
+/* footer脚步样式*************************************************************** */
+footer{
+    width: 100%;
+    height: 437px;
+    background: black;
+}
+footer .footer_outer{
+    width: 1180px;
+    height: 430px;
+    margin: 0 auto;
+}
+footer .footer_outer .footer_top{
+    height: 70px;
+    border-bottom: 1px solid #494949;
+    line-height: 70px;
+    display: flex;
+}
+footer .footer_outer .footer_top .footer_left{
+    flex: 1;
+}
+footer .footer_outer .footer_top .footer_left span{ /*脚步top中左侧logo*/
+    color: #2990f7;
+    font-weight: bold;
+}
+.footer_left span:first-child{
+    font-size: 30px;
+}
+.footer_left span:nth-child(2){
+    font-size: 25px;
+    position: relative;
+    top: 2px;
+}
+.footer_left span:last-child{
+    position: relative;
+    left: -54px;
+    top: -18px;
+    font-size: 12px;
+}
+
+/* top中右选项卡 */
+.footer_right{
+    flex: 4;
+}
+.footer_right ul{
+    float: right;
+}
+
+.footer_right ul li{
+    list-style: none;
+    color: white;
+    width: 100px;
+    height: 71px;
+    text-align: right;
+    float: left;
+    line-height: 71px;
+}
+
+/* 脚步第二行 */
+.footer_center{
+    display: flex;
+    height: 160px;
+    padding: 20px 0 0 0;
+    border-bottom: 1px solid #494949;
+}
+.footer_center .footer_center_left{
+    flex: 3;
+}
+/* 第二行左侧文字部分 */
+.footer_center .footer_center_left ul li{
+    list-style: none;
+    font-size: 14px;
+    color: #999999;
+    height: 20px;
+    margin-bottom: 4px;
+
+}
+.footer_center .footer_center_left ul li:nth-child(2){
+    font-size: 24px;
+    color: white;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.footer_center .footer_center_left ul li:last-child{
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+/* 第二行右侧图片 */
+.footer_center .footer_center_right{
+    flex: 1;
+}
+.footer_center .footer_center_right .footer_code{
+    width: 90px;
+    margin:20px 0 0 20px;
+    float: right;
+    text-align: center;
+}
+.footer_center .footer_center_right .footer_code img{
+    width: 90px;
+}
+.footer_center .footer_center_right .footer_code .footer_text{
+    color: #999999;
+    width: 90px;
+    border: 1px solid #252d33;
+    border-radius: 10px;
+}
+
+/* 脚步bottom部分 */
+.footer_bottom{
+    padding: 20px 0;
+}
+.footer_bottom ul li{
+    list-style: none;
+    color: #999999;
+}
+.footer_bottom ul li:first-child{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.footer_bottom ul li:nth-child(2){
+    width: 20%;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.footer_bottom ul li:nth-child(3){
+    width: 48%;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.footer_bottom ul li:nth-child(4){
+    font-size: 11px;
+    color: #796e56;
+}
+.footer_bottom ul li:last-child{
+    font-size: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

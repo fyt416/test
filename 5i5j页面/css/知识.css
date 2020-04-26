@@ -1,0 +1,208 @@
+/* 首页.html的body边距设置为0 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* article部分 */
+.article{
+    width: 1180px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.article>div:first-child{
+    height: 54px;
+    line-height: 54px;
+    color: #888888;
+    font-size: 12px;
+}
+/* 搜索栏 */
+.article_search{
+    height: 54px;
+    background-color: #fff8e1;
+    margin-bottom: 20px;
+}
+.article_search span:first-child{
+    display: inline-block;
+    width: 88px;
+    height: 54px;
+    line-height: 54px;
+    text-align: center;
+    color: #ffffff;
+    background-image: linear-gradient(to right,#ff9f00,#fdb600);
+}
+.article_search span:nth-child(2){
+    padding-left: 10px;
+}
+.article_search input{
+    width: 270px;
+    height: 36px;
+    margin-left: 640px;
+    border: 1px solid #ffffff;
+    padding-left: 5px;
+}
+.article_search span:last-child{
+    display: inline-block;
+    width: 74px;
+    height: 36px;
+    line-height: 36px;
+    color: #ffffff;
+    background-image: linear-gradient(to right,#ff9f00,#fdb600);
+    text-align: center;
+    margin-left: 0;
+
+}
+
+/* 百度百科部分 */
+.article_note{
+    width: 1180px;
+    margin: 0 auto;
+    /* border: 1px solid yellow; */
+    display: flex;
+    margin-bottom: 30px;
+}
+.note_left{
+    flex: 1;
+    /* border: 1px solid red; */
+}
+.note_left>span{
+    display: inline-block;
+    font-size: 30px;
+    padding: 10px 0;
+    font-weight: bold;
+    height: 50px;
+    width: 290px;
+    border-bottom: 8px solid #1a242c;
+
+}
+/* 买房 租房部分 */
+.note_left .note1{
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    height: 114px;
+}
+.note_left .note1>div:first-child{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.note_left .note1>div:nth-child(2){
+    margin-bottom: 10px;
+}
+.note_left .note1>div:nth-child(2) span{
+    margin: 10px 20px 10px 0;
+    color: #656565;
+}
+.note_left .note1>div:nth-child(3) span{
+    margin: 10px  20px 10px 0;
+    color: #656565;
+}
+
+
+
+
+/* 右侧信息 */
+.note_right{
+    flex: 3;
+    margin-left: 20px;
+}
+.note_right .right_img1{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.note_right .right_img1 div:first-child img{
+    width: 249px;
+    height: 140px;
+    float: left;
+}
+.note_right .right_img1 .img1_note{
+    width: 600px;
+    float: right;
+    list-style: none;
+}
+.note_right .right_img1 .img1_note li:first-child{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.note_right .right_img1 .img1_note li:nth-child(2){
+    font-size: 13px;
+    color: #656565;
+    margin-bottom: 10px;
+}
+.note_right .right_img1 .img1_note li:nth-child(3){
+    width: 80px;
+    text-align: center;
+    height: 20px;
+    background-color: #cadffc;
+    margin-bottom: 10px;
+}
+.note_right .right_img1 .img1_note li:nth-child(4){
+    color: #a7a7ba;
+}
+
+/* 翻页 */
+.page ul{
+    float: right;
+}
+.page ul li{
+    list-style: none;
+    float:right;
+    display: block;
+    width: 38px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin-right: 10px;
+    border: 1px solid #dcdcdc;
+    
+}
+.page ul li:first-child{
+    width: 72px;
+}
+.page ul li:last-child{
+    color: #ffffff;
+    background-color: #fbb100;
+}
+
+/* 脚部上方灰色选项卡部分样式----------------------------------------- */
+.section{
+    background-color: #f7f7f7;
+    padding:20px 0 40px 0;
+}
+.section .section_outer{
+    width: 1180px;
+    margin: 0 auto;
+    
+}
+.section .section_outer .section_top{
+    height: 43px;
+    padding-left: 10px;
+    border-bottom: 1px solid #eaeaea;
+    line-height: 43px;
+}
+
+.section .section_outer .section_top div{
+    float: left;
+    margin-right: 56px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 98%;
+    
+}
+.section .section_outer .section_top div:hover{
+    cursor: pointer;
+    color: #fcb100;
+    border-bottom: 3px solid #fcb100;
+}
+
+/* 选项卡第二行 */
+section .section_bottom span{
+    margin-right: 15px;
+    font-size: 12px;
+    line-height: 42px;
+}
+section .section_bottom span:hover{
+    color: #007ef3;
+}
+

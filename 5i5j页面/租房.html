@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>租房</title>
+    
+    <link rel="stylesheet" href="css/租房.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+    <div class="outer_center">
+        <!-- 共有的头部部分 引入header.html -->
+        <object data="header.html" type="" style="width: 100%;height: 60px;" ></object>
+
+        <!-- 中间内容部分 主体不重复部分*******************************************************-->
+        <div class="article">
+            <div class="article_outer">
+                <!-- 头部的筛选部分   一直到更多 -->
+                <div class="article_header">
+                    <!-- 我爱我家苏州 >苏州二手房 -->
+                    <div class="article_header_one">
+                        <div>
+                            <span>我爱我家 >苏州二手房</span>
+                        </div>
+                        <div>
+                            <span>条件筛选</span>
+                        </div>
+                    </div>
+                    <!-- 条件筛选下面的内容 -->
+                    <div class="article_header_two">
+                        <!-- 搜索框部分 article_header_two的div第一部分-->
+                        <div>
+                            <input type="text" placeholder="区域、商圈、小区、地铁应有尽有">
+                            <span>搜索</span>
+                        </div>
+                        <!-- 位置 总价 面积 户型 用途 条件 更多的区域  article_header_two 的div第二部分 -->
+                        <div>
+                            <!-- 第一行 -->
+                            <div>
+                                <ul>
+                                    <li>位置</li>
+                                    <li class="checked">区域</li>
+                                    <li>地铁</li>
+                                </ul>
+                            </div>
+                            <!-- 第二行 -->
+                            <div>
+                                <ul>
+                                    <li class="spec">全部</li>
+                                    <li>园区</li>
+                                    <li>姑苏</li>
+                                    <li>吴中</li>
+                                    <li>新区</li>
+                                    <li>相城</li>
+                                    <li>吴江</li>
+                                    <li>昆山</li>
+                                </ul>
+                            </div>
+                            <!-- 第三行 -->
+                            <div>
+                                <ul>
+                                    <p>总价</p>
+                                    <li><input type="checkbox">80万以下</li>
+                                    <li><input type="checkbox">80-100万</li>
+                                    <li><input type="checkbox">100-120万</li>
+                                    <li><input type="checkbox">120-150万</li>
+                                    <li><input type="checkbox">150-200万</li>
+                                    <li><input type="checkbox">200-300万</li>
+                                    <li><input type="checkbox">300-500万</li>
+                                    <li><input type="checkbox">500万以上</li>
+                                    <section>
+                                        <span></span>
+                                        ~
+                                        <span></span>
+                                        <span class="yes">
+                                            确定
+                                        </span>
+                                    </section>
+                                </ul>
+                            </div>
+                            <!-- 第四行 -->
+                            <div>
+                                <ul>
+                                    <p>面积</p>
+                                    <li><input type="checkbox">50m<sup>2</sup></li>
+                                    <li><input type="checkbox">50-70m<sup>2</sup></li>
+                                    <li><input type="checkbox">70-90m<sup>2</sup></li>
+                                    <li><input type="checkbox">90-110m<sup>2</sup></li>
+                                    <li><input type="checkbox">110-130m<sup>2</sup></li>
+                                    <li><input type="checkbox">130-150m<sup>2</sup></li>
+                                    <li><input type="checkbox">150-200m<sup>2</sup></li>
+                                    <li><input type="checkbox">200m<sup>2</sup></li>
+                                    <section>
+                                        <span></span>
+                                        ~
+                                        <span></span>
+                                        <span class="yes">
+                                            确定
+                                        </span>
+                                    </section>
+                                </ul>
+                            </div>
+                            <!-- 第五行 -->
+                            <div>
+                                <ul>
+                                    <p>户型</p>
+                                    <li><input type="checkbox">一室</li>
+                                    <li><input type="checkbox">二室</li>
+                                    <li><input type="checkbox">三室</li>
+                                    <li><input type="checkbox">四室</li>
+                                    <li><input type="checkbox">五室</li>
+                                    <li><input type="checkbox">五室以上</li>
+                                </ul>
+                            </div>
+                            <!-- 第六行 -->
+                            <div>
+                                <ul>
+                                    <p>用途</p>
+                                    <li><input type="checkbox">普通住宅</li>
+                                    <li><input type="checkbox">别墅</li>
+                                    <li><input type="checkbox">其他</li>
+                                </ul>
+                            </div>
+                            <!-- 第七行 -->
+                            <div>
+                                <ul>
+                                    <p>条件</p>
+                                    <a>
+                                        <li class="fa fa-save"> </li>
+                                        保存
+                                    </a>
+                                    <a>
+                                        <li class="fa fa-bitbucket"></li>
+                                        清空
+                                    </a>
+                                </ul>
+                            </div>
+                            <!-- 第八行 -->
+                            <div>
+                                <p>——————更多 <i class="fa fa-anchor"></i>——————</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- 共找到27874套二手房房源部分 -->
+                <div class="article_body">
+                    <!-- body的左侧部分 -->
+                    <div class="article_left">
+                        <!-- 共找到27873套二手房房源 左侧的第一排内容 -->
+                        <div class="article_first">
+                            <div>
+                                共找到<span>27873</span>套二手房房源
+                            </div>
+                            <!--第一排 小标题部分 -->
+                            <div>
+                                <ul>
+                                    <a class="special">默认排序</a>
+                                    <a>总价
+                                        <li class="fa fa-long-arrow-up"></li>
+                                    </a>
+                                    <a>单价
+                                        <li class="fa fa-long-arrow-up"></li>
+                                    </a>
+                                    <a>面积
+                                        <li class="fa fa-long-arrow-up"></li>
+                                    </a>
+                                    <a>最新发布
+                                        <li class="fa fa-long-arrow-up"></li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- 图片第1行 左侧的第二排内容 -->
+                        <div class="article_sec">
+                            <!-- 1.图片部分 -->
+                            <div>
+                                <p>相寓</p>
+                                
+                                    <img src="images/相寓1.jpg" alt="" style="width: 240px; height: 180px;">
+                                
+                            </div>
+                            <!-- 2.文字部分 -->
+                            <div>
+                                <ul>
+                                    <a href="#">庄先湾6号，带城振华直属未用，房东置换诚心出售</a>
+                                    <a href="#">
+                                        <li class="fa fa-gg"></li>
+                                        2室1厅1卫·57.7 平米 · 南北 · 顶层/4层 · 简装 · 1996年建
+                                        <li>230万元</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="fa fa-renren"></li>
+                                        吴2室1厅1卫·57.7 平米 · 南北 · 顶层/4层 · 简装 · 1996年建
+                                        <li>单价39861元/m<sup>2</sup>></li>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-eye"></i>
+                                        3 人关注 · 近30天带看 16 次 · 昨天发布
+                                    </a>
+                                    <a href="#"> 
+                                        <li>近地铁</li>
+                                        <li>随时看</li>
+                                        <li>满五年</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 图片第2行  -->
+                        <div class="article_sec">
+                            <!-- 1.图片部分 -->
+                            <div>
+                                <p>相寓</p>
+                                
+                                    <img src="images/相寓2.jpg" alt="" style="width: 240px; height: 180px;">
+                                
+                            </div>
+                            <!-- 2.文字部分 -->
+                            <div>
+                                <ul>
+                                    <a href="#">明日家园新上 满五年學区未用 附属车位 家电全留 诚售</a>
+                                    <a href="#">
+                                        <li class="fa fa-gg"></li>
+                                        2室2厅1卫·104.34 平米 · 南 · 底层/9层 · 精装 · 2003年建
+                                        <li>240万元</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="fa fa-renren"></li>
+                                        吴门桥街道 明日家园 · 距离地铁团结桥925米  
+                                        <li>单价23002元/m<sup>2</sup>></li>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-eye"></i>
+                                        1 人关注 · 近30天带看 1 次 · 2020-03-24发布
+                                    </a>
+                                    <a href="#"> 
+                                        <li>近地铁</li>
+                                        <li>随时看</li>
+                                        <li>满五年</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 图片第3行  -->
+                        <div class="article_sec">
+                            <!-- 1.图片部分 -->
+                            <div>
+                                <p>相寓</p>
+                                
+                                    <img src="images/相寓3.jpg" alt="" style="width: 240px; height: 180px;">
+                                
+                            </div>
+                            <!-- 2.文字部分 -->
+                            <div>
+                                <ul>
+                                    <a href="#">独.家好房，随时看房，低于市.场价，装修保养好，直接拎包入住</a>
+                                    <a href="#">
+                                        <li class="fa fa-gg"></li>
+                                        3室2厅2卫·126 平米 · 南北 · 顶层/30层 · 精装 · 2016年建
+                                        <li>330万元</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="fa fa-renren"></li>
+                                        平江路街道 梅巷花园 · 距离地铁平河路1222米  
+                                        <li>单价25470元/m<sup>2</sup>></li>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-eye"></i>
+                                        0 人关注 · 近30天带看 2 次 · 2020-03-27发布
+                                    </a>
+                                    <a href="#"> 
+                                        <li>近地铁</li>
+                                        <li>随时看</li>
+                                        <li>满二年</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 图片第4行  -->
+                        <div class="article_sec">
+                            <!-- 1.图片部分 -->
+                            <div>
+                                <p>相寓</p>
+                                
+                                    <img src="images/相寓4.jpg" alt="" style="width: 240px; height: 180px;">
+                                
+                            </div>
+                            <!-- 2.文字部分 -->
+                            <div>
+                                <ul>
+                                    <a href="#">合景峰汇 三房两卫 婚装30万 田园风 视野开阔</a>
+                                    <a href="#">
+                                        <li class="fa fa-gg"></li>
+                                        3室2厅2卫·97.37 平米 · 南 · 低楼层/12层 · 精装 · 2010年建
+                                        <li>248万元</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="fa fa-renren"></li>
+                                        活力岛 峰汇园花园二区 · 距离地铁孙武纪念园390米 
+                                        <li>单价25470元/m<sup>2</sup>></li>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-eye"></i>
+                                        8 人关注 · 近30天带看 6 次 · 2019-11-18发布
+                                    </a>
+                                    <a href="#"> 
+                                        <li>近地铁</li>
+                                        <li>满五年</li>
+                                        <li>近公园</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 图片第5行  -->
+                        <div class="article_sec">
+                            <!-- 1.图片部分 -->
+                            <div>
+                                <p>相寓</p>
+                                
+                                    <img src="images/相寓5.jpg" alt="" style="width: 240px; height: 180px;">
+                                
+                            </div>
+                            <!-- 2.文字部分 -->
+                            <div>
+                                <ul>
+                                    <a href="#">双湾锦园，全新装修3房，位置好，采光无影响，随时看房</a>
+                                    <a href="#">
+                                        <li class="fa fa-gg"></li>
+                                        3室2厅1卫·89.7 平米 · 南北 · 高楼层/33层 · 精装 · 2016年建
+                                        <li>272万元</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="fa fa-renren"></li>
+                                        郭巷 双湾锦园一期 · 距离地铁独墅湖南1133米
+                                        <li>单价30323元/m<sup>2</sup>></li>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-eye"></i>
+                                        4 人关注 · 近30天带看 1 次 · 2018-09-17发布
+                                    </a>
+                                    <a href="#"> 
+                                        <li>近地铁</li>
+                                        <li>随时看</li>
+                                        <li>满二年</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 图片第6行  -->
+                        <div class="article_sec">
+                            <!-- 1.图片部分 -->
+                            <div>
+                                <p>相寓</p>
+                                
+                                    <img src="images/相寓6.jpg" alt="" style="width: 240px; height: 180px;">
+                               
+                            </div>
+                            <!-- 2.文字部分 -->
+                            <div>
+                                <ul>
+                                    <a href="#">新旅城花园七区二室二厅一卫</a>
+                                    <a href="#">
+                                        <li class="fa fa-gg"></li>
+                                         2室2厅1卫·85.53 平米 · 南 · 高楼层/17层 · 精装 · 2016年建
+                                        <li>200万元</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="fa fa-renren"></li>
+                                        木渎 新旅城花园七区
+                                        <li>单价23384元/m<sup>2</sup>></li>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-eye"></i>
+                                        9 人关注 · 近30天带看 1 次 · 2017-11-03发布
+                                    </a>
+                                    <a href="#"> 
+                                        <li>近地铁</li>
+                                        <li>随时看</li>
+                                        <li>业主自荐</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 图片第7行  -->
+                        <div class="article_sec">
+                            <!-- 1.图片部分 -->
+                            <div>
+                                <p>相寓</p>
+                                
+                                    <img src="images/相寓7.jpg" alt="" style="width: 240px; height: 180px;">
+                                
+                            </div>
+                            <!-- 2.文字部分 -->
+                            <div>
+                                <ul>
+                                    <a href="#">新上带城振华直属，中间楼层，边户，采光好看房方便有钥匙</a>
+                                    <a href="#">
+                                        <li class="fa fa-gg"></li>
+                                        2室1厅1卫·63.69 平米 · 南 · 低楼层/3层 · 简装 · 1988年建
+                                        <li>230万元</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="fa fa-renren"></li>
+                                        葑门街道 里河桥散盘
+                                        <li>单价36112元/m<sup>2</sup>></li>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-eye"></i>
+                                        8 人关注 · 近30天带看 10 次 · 2020-01-30发布
+                                    </a>
+                                    <a href="#"> 
+                                        <li>随时看</li>
+                                        <li>满五年</li>
+                                        <li>近公园</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 图片第8行  -->
+                        <div class="article_sec">
+                            <!-- 1.图片部分 -->
+                            <div>
+                                <p>相寓</p>
+                                
+                                    <img src="images/相寓8.jpg" alt="" style="width: 240px; height: 180px;">
+                                
+                            </div>
+                            <!-- 2.文字部分 -->
+                            <div>
+                                <ul>
+                                    <a href="#">山水华庭精 装两房，家具家电全留，三开间朝南，看房有钥匙</a>
+                                    <a href="#">
+                                        <li class="fa fa-gg"></li>
+                                        2室2厅1卫·80.27 平米 · 南 · 中楼层/12层 · 精装 · 2005年建
+                                        <li>197万元</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="fa fa-renren"></li>
+                                        狮山 山水华庭 
+                                        <li>单价24542元/m<sup>2</sup>></li>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-eye"></i>
+                                        0 人关注 · 近30天带看 3 次 · 2020-03-09发布
+                                    </a>
+                                    <a href="#"> 
+                                        <li>近地铁</li>
+                                        <li>随时看</li>
+                                        <li>满五年</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 图片第9行  -->
+                        <div class="article_sec">
+                            <!-- 1.图片部分 -->
+                            <div>
+                                <p>相寓</p>
+                                
+                                    <img src="images/相寓9.jpg" alt="" style="width: 240px; height: 180px;">
+                                
+                            </div>
+                            <!-- 2.文字部分 -->
+                            <div>
+                                <ul>
+                                    <a href="#">阿卡迪亚洋房，楼层好，位置好，业主诚意出售</a>
+                                    <a href="#">
+                                        <li class="fa fa-gg"></li>
+                                        3室2厅2卫·103.4 平米 · 南北 · 中楼层/7层 · 精装 · 2013年建
+                                        <li>385万元</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="fa fa-renren"></li>
+                                        青剑湖 阿卡迪亚五区 
+                                        <li>单价37234元/m<sup>2</sup>></li>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-eye"></i>
+                                        2 人关注 · 近30天带看 3 次 · 2019-07-01发布
+                                    </a>
+                                    <a href="#"> 
+                                        <li>近地铁</li>
+                                        <li>随时看</li>
+                                        <li>业主自荐</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- 图片第10行  -->
+                        <div class="article_sec">
+                            <!-- 1.图片部分 -->
+                            <div>
+                                <p>相寓</p>
+                                
+                                    <img src="images/相寓10.jpg" alt="" style="width: 240px; height: 180px;">
+                                
+                            </div>
+                            <!-- 2.文字部分 -->
+                            <div>
+                                <ul>
+                                    <a href="#">金典花园， 装修很好，满二年，家具家电全留，诚心出售。</a>
+                                    <a href="#">
+                                        <li class="fa fa-gg"></li>
+                                        2室2厅1卫·82.77 平米 · 南 · 中楼层/20层 · 精装 · 2015年建
+                                        <li>220万元</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="fa fa-renren"></li>
+                                        郭巷 万业湖墅金典 
+                                        <li>单价26580元/m<sup>2</sup>></li>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-eye"></i>
+                                        3 人关注 · 近30天带看 4 次 · 2019-07-01发布
+                                    </a>
+                                    <a href="#"> 
+                                        <li>近地铁</li>
+                                        <li>随时看</li>
+                                        <li>满一年</li>
+                                    </a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- 底部翻页框 -->
+                        <div class="article_third">
+                            <!-- 底部文字 -->
+                            <div>
+                                首页>  苏州二手房 
+                            </div>
+                            <!-- 翻页框 -->
+                            <div>
+                                <ul>
+                                    <li class="page">下一页</li>
+                                    <li>...</li>
+                                    <li>3</li>
+                                    <li>2</li>
+                                    <li class="page2">1</li>
+                                </ul>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <!--body的右侧的试图地图找房的部分  -->
+                    <div class="article_right">
+                        <!-- 试试地图找房 -->
+                        <div>
+                            <img src="./images/rimg.jpg" alt="重新加载">
+                            <span>试试地图找房</span>
+                        </div>
+                        <!-- 热门知识部分 -->
+                        <div>
+                            <ul>
+                                <li class="remen">热门知识</li>
+                                <li>楼间距不仅是数字，更影响我们的生活</li>
+                                <li>3月LPR转换启动，关乎你的房贷利率</li>
+                                <li>苏州住建局出台楼市新政，通盖购房资格</li>
+                                <li>2020年1月苏州最新房贷利率</li>
+                                <li>苏州放宽落户政策，本科直接落户？传来人才落户利好</li>
+                            </ul>
+                        </div>
+                        <!-- 下载我爱我家部分 -->
+                        <div>
+                            <li>下载我爱我家APP</li>
+                            <img src="./images/code-app.png" alt="重新加载" style="width: 70px; height: 70px;">
+                            <li>扫描上方二维码</li>
+                            <li>随时查看海量房源</li>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+
+        <!-- 脚部上方共有部分 *****************************************************-->
+        <section class="section">
+            <div class="section_outer">
+                <div class="section_top">
+                    <div>友情链接</div>
+                    <div>热门房产网</div>
+                    <div>热门二手房</div>
+                    <div>热门租房</div>
+                    <div>热门新房</div>
+                    <div>热门小区</div>
+                    <div>热门房价</div>
+                </div>
+                <div class="section_bottom">
+                    <span>设计</span>
+                    <span>苏州律师</span>
+                    <span>苏州房产网</span>
+                    <span>上海房产网</span>
+                    <span>苏州企业网</span>
+                    <span>UI培训</span>
+                    <span>工作服</span>
+                    <span>南宁招聘</span>
+                    <span>苏州投资人</span>
+                    <span>苏州中央空调</span>
+                    <span>苏州二手房网</span>
+                    <span>办公室装修</span>
+                    <span>手机苏州二手房</span>
+                    <span>我爱我家房产网</span>
+                    <span>北京二手房网</span>
+                    <span>天津二手房网</span>
+                    <span>太原二手房网</span>
+                    <span>上海二手房网</span>
+                    <span>南京二手房网</span>
+                    <span>杭州二手房网</span>
+                    <span>苏州二手房网</span>
+                    <span>长沙二手房网</span>
+                    <span>南宁二手房网</span>
+                    <span>苏州二手房网</span>
+                    <span>苏州二手房网</span>
+                    <span>苏州房产网</span>
+                    <span>店铺转让</span>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- 脚部上方共有部分 *****************************************************-->
+       
+        <!-- footer -->
+        <object data="./footer.html" type="" style="width: 100%;height: 437px;"></object>
+    </div>
+</body>
+</html>

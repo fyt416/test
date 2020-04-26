@@ -1,0 +1,15 @@
+父级元素下：
+height:60px;
+line-height:60px;设置文字垂直方向居中
+
+text-decoration: underline;/*文字添加下划线*/
+
+
+
+-------------------------
+布局：
+   行级
+
+-------------------------
+渐变色格式：
+background-image: linear-gradient(to right,#ff9c00,#fdb800)

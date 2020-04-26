@@ -1,0 +1,449 @@
+/* 首页.html的body边距设置为0 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* 脚部上方灰色选项卡部分样式----------------------------------------- */
+.section{
+    background-color: #f7f7f7;
+    padding:20px 0 40px 0;
+}
+.section .section_outer{
+    width: 1180px;
+    margin: 0 auto;
+    
+}
+.section .section_outer .section_top{
+    height: 43px;
+    padding-left: 10px;
+    border-bottom: 1px solid #eaeaea;
+    line-height: 43px;
+}
+
+.section .section_outer .section_top div{
+    float: left;
+    margin-right: 56px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 98%;
+    
+}
+.section .section_outer .section_top div:hover{
+    cursor: pointer;
+    color: #fcb100;
+    border-bottom: 3px solid #fcb100;
+}
+
+/* 选项卡第二行 */
+section .section_bottom span{
+    margin-right: 15px;
+    font-size: 12px;
+    line-height: 42px;
+}
+section .section_bottom span:hover{
+    color: #007ef3;
+}
+
+
+
+/* article部分******************************************************************************** */
+.article .article_firstRow{
+    height: 393px;
+    background-image: url('../images/背景.png');
+
+}
+/* 左右两个框+房产中介诚信服务承诺的大框  */
+.article .article_firstRow .article_firstRow_outer{
+    width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+}
+/* 涵盖左右两个框的中框 */
+.article .article_firstRow .article_firstRow_outer .article_form{
+    height: 315px;
+    margin-top: 26px;
+    display: flex;
+}
+/* 左边的大文字框 */
+.article .article_firstRow .article_firstRow_outer .article_form>div{
+    float: left;
+    height: 100%;
+    width: 680px;
+    /* border: 1px solid yellow; */
+}
+/* 左边的文字框里的列标题 */
+.article_form .article_form_left{
+    display: flex;
+}
+.article_form .article_form_left ul{
+    width: 96px;
+    list-style: none;
+    background-color: #f5f5f5;
+    height: 100%;
+
+}
+.article_form .article_form_left ul li{
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #eaeaea;
+}
+.article_form .article_form_left ul li:hover{
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+/* 左边的文字框里的列标题——————》旁边的文字框 */
+.article_form .article_form_left .article_form_left_details{
+    width: 584px;
+    height: 257px;
+    /* border: 1px solid red;可删 */
+    background-color: #ffffff;
+    padding: 32px 32px 26px 34px;
+
+}
+.article_form_left_details div:first-child{
+    height: 70px;
+}
+.article_form_left_details div:first-child input{
+    width: 407px;
+    height: 19px;
+    padding: 10px;
+    font-size: 14px;
+}
+.article_form_left_details div:first-child .button{
+    width: 89px;
+    height: 40px;
+    background-color: orange;
+    display: inline-block;
+    position: relative;    /*search 的位置会根据页面比例 的大小而改变位置*/
+    top:-40px;
+    left: 428px;
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;  
+}
+/* 文字框第二行文字  园区 姑苏 吴中 新区 昆山 */
+.article_form_left_details div span{
+    font-size: 14px;
+    margin-right: 18px;
+    margin-bottom: 15px;
+}
+.article_form_left_details div:nth-child(2){
+    margin-bottom: 50px;
+}
+.article_form_left_details div{
+    margin-bottom: 20px;
+}
+.article_form_left_details div:last-child p{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    color: #608997;
+    font-size: 12px;
+    background-color: #ebf5f7;
+    border-radius: 5px;
+    margin-right: 18px;
+    padding: 0 15px;
+
+
+}
+/* 右边的图片框   即form_right*/
+.article .article_firstRow .article_firstRow_outer .article_form>div:last-child{
+    margin-left: 20px;
+    width: 480px;
+    background-color: #ffffff;
+    padding: 10px 0 10px 12px;
+    height: 295px;
+}
+.article .article_firstRow .article_firstRow_outer .article_promise{
+    font-size: 12px;
+    color: #ffffff;
+    margin-top: 14px;
+    
+}
+.article .article_firstRow .article_firstRow_outer .article_promise span:first-child{
+    margin-right: 6px;
+    font-size: 16px;
+}
+
+
+/*文章主体的第二行样式 地图找房 经纪人 业主委托 购房工具*************************** */
+.article_sec .article_sec_outer{
+    width: 1180px;
+    margin: 0 auto;
+    /* border: 1px solid red ; */
+    height: 174px;
+    padding: 30px 0 40px 0;
+    height: 104px;
+    display: flex;
+}
+.article_sec .article_sec_outer div{
+    width: 280px;
+    height: 104px;
+    float: left;
+    margin-right: 20px;
+    /* border: 1px solid blue; */
+}
+.article_sec .article_sec_outer div:last-child{
+    margin-right: 0;
+}
+
+/* 给四个框里面添加颜色文字 */
+/* 第一个橙色框 */
+.article_sec .article_sec_outer div:first-child{
+    background-image: linear-gradient(to right,#ff9c00,#fdb800)
+}
+.article_sec .article_sec_outer>div:nth-child(2){
+    background-image: linear-gradient(to right,#00a4fe,#2ac0f8)
+}
+.article_sec .article_sec_outer>div:nth-child(3){
+    background-image: linear-gradient(to right,#9271ff,#bf71ff)
+}
+.article_sec .article_sec_outer>div:nth-child(4){
+    background-image: linear-gradient(to right,#ff6950,#ff9340)
+}
+
+.article_sec .article_sec_outer div div:first-child{
+    /* border: 1px solid red; */
+    float: left;
+    width: 90px;
+    height: 60px;
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    background-image: unset;  /*该区域不继承父级元素的颜色（样式）*/
+    text-align: right;
+    margin-top: 20px;
+}
+.article_sec .article_sec_outer div div:last-child{
+    float: left;
+    width: 150px;
+    color: #ffffff;
+    font-size: 14px;
+
+}
+.article_sec .article_sec_outer div div:last-child p:first-child{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+/*  article的第三行 推荐二手房部分*******************************************/
+
+.article_third_outer{
+    width: 1180px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    height: 342px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+
+}
+.article_third_outer .article_title{
+    height: 70px;
+    line-height: 70px;
+}
+.article_third_outer .article_title p:first-child{
+    float: left;
+    font-size: 26px;
+    font-weight: bold;
+}
+.article_third_outer .article_title p:last-child{
+    float: right;
+    color: #888888;
+    font-size: 14px;
+}
+/* article中第三行内部的第二行（每个房子详情模块） */
+.article_third_outer .article_int{
+    height: 272px;
+    display: flex;
+}
+.article_third_outer .article_int >div{
+    width: 280px;
+    height: 272px;
+    margin-right: 20px;
+    /* border: 1px solid blue; */
+}
+.article_third_outer .article_int>div div:first-child{
+    width: 280px;
+    height: 188px;
+    /* border: 1px solid red; */
+    background-image: url('../images/A1.jpg');
+}
+/* 推荐二手房部分图片上悬浮盒子以及文字 */
+.article_third_outer .article_int>div div:first-child div:first-child{
+    width: 86px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    background-image: url('../images/black-bg.png');
+    margin-top: 120px;
+    display: inline-block;
+}
+.article_third_outer .article_int>div div:first-child div:last-child{
+    position: relative;
+    left: 210px;
+    top: -45px;
+}
+/* .article_third_outer .article_int >div div:last-child{
+    height: 81px;
+    border: 1px solid green;
+} */
+.article_third_outer .article_int>div div:last-child>p:first-child{
+    margin-top: 10px;
+    /* border: 1px solid green; */
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.article_third_outer .article_int>div div:last-child>p:last-child span{
+    font-size: 14px;
+    color: #888888;
+    margin-right: 5px;
+}
+.article_third_outer .article_int>div:last-child{
+    margin-right: 0px;
+}
+
+/*二手房下面的图片部分***********************start********************  */
+/* article中的第四行 */
+.article_four{
+    padding-top: 60px;
+    background-color: #f7f7ff;
+    margin-bottom: 38px;
+    padding-bottom: 30px;
+    height: 650px;
+}
+.article_four .article_four_outer{
+    width: 1180px;
+    margin: 0 auto;
+}
+.article_four .article_four_outer>div{
+    height: 276px;
+    margin-bottom: 60px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+.article_four .article_four_outer>div>div{
+    width:280px;
+    height: 276px;
+    margin-right:20px;
+    /* border: 1px solid red; */
+}
+/* 第一排第一个框    */
+
+.article_four .article_four_outer>div>div img{
+    width:280px;
+    height: 188px;
+}
+.article_four .article_four_outer>div>div>p:nth-child(2){
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 5px;
+}
+.article_four .article_four_outer>div>div>p:last-child{
+    color: #888888;
+    font-size: 14px;
+    text-align: center;
+}
+
+.article_four .article_four_outer>div>div.article_four_one{
+    background-image: url('../images/bnt-img.png');
+}
+.article_four .article_four_outer>div>div.bg{
+    background-image: url('../images/bnz-img.png');
+}
+
+.article_four .article_four_outer>div>div.article_four_one p{
+    font-size: 14px;
+    color: #ffffff;
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
+.article_four .article_four_outer>div>div.article_four_one p:first-child{
+    font-size: 34px;
+    margin-bottom:30px 0 38px 25px;
+}
+.article_four .article_four_outer>div>div:last-child{
+    margin-right: 0;
+}
+
+/* article第五行部分*************** */
+.article_five_outer{
+    width: 1180px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+/* 海外置业 首行 标题 */
+.article_five_outer>div:first-child{
+    height: 70px;
+    line-height: 70px;
+}
+.article_five_outer>div:first-child>p:first-child{
+    float: left;
+    font-size: 26px;
+    color: #333333;
+    font-weight: bold;
+}
+.article_five_outer>div:first-child>p:last-child{
+    float: right;
+    color: #888888;
+    font-size: 14px;
+}
+/* 海外置业 第二行 图片部分 */
+.article_five_outer .all_pic{
+    height: 280px;
+    display: flex;
+    
+}
+.all_pic .pic1{
+    width: 280px;
+    height: 280px;
+    margin-right: 20px;
+    background-image: url('../images/51.jpg');
+}
+.all_pic .pic2{
+    width: 280px;
+    height: 280px;
+    margin-right: 20px;
+    background-image: url('../images/52.jpg');
+}
+.all_pic .pic3{
+    width: 280px;
+    height: 280px;
+    margin-right: 20px;
+    background-image: url('../images/53.jpg');
+}
+.all_pic .pic4{
+    width: 280px;
+    height: 280px;
+    background-image: url('../images/54.jpg');
+}
+.pic_inner{
+    width: 220px;
+    height: 70px;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    left: 30px;
+    top: 180px;
+}
+.pic_inner .txt{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+
+ 
